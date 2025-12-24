@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Резюме фуллстек разработчика</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Резюме фуллстек разработчика">  <!-- Краткое и цепляющее описание вашей страницы -->
+        <meta name="keywords" content="резюме, фуллстек, разработчик">   <!-- ключевые слова, пример, мета тег -->
+        <meta name="robots" content="index, follow">    <!-- Инструкции для поисковых роботов (например, noindex, nofollow - запретить индексацию и переходы) -->
+        <!-- Open Graph -->
+        <meta property="og:title" content="Заголовок для соцсетей"> <!-- Заголовок для соцсетей -->
+        <meta property="og:description" content="Описание для соцсетей">    <!-- Описание для соцсетей -->
+        <meta property="og:image" content="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Unofficial_JavaScript_logo_2.svg">  <!-- URL изображения для превью (как контент вашего сайта выглядит при публикации ссылки в социальных сетях) -->
+        
+        <!-- Базовый favicon для старых браузеров -->
+        <link rel="icon" type="image/x-icon" href="">
+
+        <!-- Основная иконка высокого разрешения для большинства браузеров (формат PNG) -->
+        <link rel="icon" type="image/png" sizes="32x32" href="">
+        <link rel="icon" type="image/png" sizes="16x16" href="">
+
+        <!-- Иконка для Apple устройств (iPhone, iPad) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="">
+
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <style>
+            :root {
+                --base-font-size: 12px;
+                --base-icon-size: 20px;
+                --adaptive-factor: 1;
+                --primary-color: #6366f1; /* Модный фиолетово-синий */
+                --gradient: linear-gradient(to bottom right, #4339a0, pink);
+                --main-bg: #000000;
+                --base-border-weight: 4px;
+            }
+            
+            ИСПОЛЬЗУЮТСЯ ДЛЯ ОТСУПОВ МЕЖДУ ВЕРХНЕУРОВНЕВЫМИ ЭЛЕМЕНТАМИ СТРАНИЦЫ
+            .m-0 { margin: 0 0; }
+            .m-1 { margin: 0.25rem 0; }
+            .m-2 { margin: 0.5rem 0; }
+            .m-3 { margin: 1rem 0; }
+            .m-4 { margin: 2rem 0; }
+            .m-5 { margin: 4rem 0; }
+
+            html {
+                background: var(--gradient);
+                background-size: 300% 5000%;
+                animation: gradient-flow 20s ease infinite;
+                position: relative;
+                overflow: hidden;
+            }
+
+            @keyframes gradient-flow {
+                0% {
+                    background-position: 0% 0%;
+                }
+                50% {
+                    background-position: 100% 0%;
+                }
+                100% {
+                    background-position: 0% 0%;
+                }
+            }
+
+            body {
+                color: white;
+            }
+
+            .navigation {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: calc(var(--base-font-size) + 1.5 * 1vw);
+                background: var(--main-bg);
+            }
+
+            .navigation__logo i{
+                font-size: calc(var(--base-icon-size) + 1.5 * 1vw)
+            }
+
+            .navigation a {
+                color: inherit;
+                text-decoration: none;
+                gap: 0.3em;
+            }
+
+            .logo-link {
+                display: flex;
+                align-items: center;
+                padding: .5em 0;
+                border-bottom: var(--base-border-weight) solid transparent;
+                border-radius: .3em;
+                transition: 
+                    color 0.4s ease,
+                    border-color 0.4s ease,
+                    transform 0.3s ease;
+            }
+
+            .logo-link:hover {
+                color: var(--primary-color);
+                border-bottom-color: var(--primary-color);
+                transform: translateY(-2px);
+            }
+
+            .navigation__anchors {
+                display: flex;
+                align-items: center;
+
+                height: 100%;
+                position: relative;
+            }
+
+            .navigation__anchors span {
+                display: flex;
+                align-items: center;
+                margin: .5em .5em;
+                padding: .5em 0;
+                height: 100%;
+                border-bottom: var(--base-border-weight) solid transparent;
+                border-radius: .3em;
+                transition: 
+                    color 0.4s ease,
+                    border-color 0.4s ease,
+                    transform 0.3s ease;
+            }
+
+            .navigation__anchors span:hover {
+                color: var(--primary-color);
+                border-bottom-color: var(--primary-color);
+                transform: translateY(-2px);
+            }
+            
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: calc(var(--base-font-size) + var(--adaptive-factor) * 1vw);
+            }
+
+            .content__section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: var(--main-bg);
+                max-width: 66vw;
+                padding: 0 2em 2em 2em;
+                border-radius: 1em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="m-1">
+            <nav class="navigation">
+                <div class="navigation__logo">
+                    <a class="logo-link"  target="_blank" rel="noopener noreferrer" title="Мой GitHub"
+                        href="https://github.com/gwxnbleidd"
+                    >
+                        <i class="bi bi-github"></i>
+                        Dmitry Gaichukov
+                    </a>
+                </div>
+                <div class="navigation__anchors">
+                    <span><a href="#about">О себе</a></span>
+                    <span><a href="#skills">Навыки</a></span>
+                    <span><a href="#projects">Проекты</a></span>
+                    <span><a href="#contacts">Контакты</a></span>
+                </div>
+            </nav>
+        </header>
+        <div class="content m-3">
+            <section class="content__section">
+                <h3>Привет! Я Дима, начинающий фуллстек разработчик</h2>
+                <img></img>
+                <p style="text-indent: 1.5rem; margin: 0;">
+                    Интересуюсь разработкой высоконагруженных систем и активно осваиваю соответствующие технологии, углубляю знания в Python, изучая профессиональную литературу (например, “Fluent Python”). Благодаря опыту работы бизнес-аналитиком уверенно взаимодействую с заказчиками: уточняю требования для ТЗ, собираю обратную связь для улучшения пользовательского опыта.
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
